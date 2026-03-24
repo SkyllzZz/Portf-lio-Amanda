@@ -1,6 +1,10 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background:linear-gradient(to right, rgb(109, 57, 177), rgb(98, 41, 116));
 }
+
 .topbar{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     color: rgb(48, 47, 47);
@@ -10,6 +14,7 @@ body{
     border-radius: 5px 5px 0px 0px;
     max-width: 1000px;
     margin: auto;
+
 }
 .esquerdo img{
     height: 25px;
@@ -30,18 +35,20 @@ body{
 .direito h2{
     margin: 0;
     font-size: 20px;
+    text-align: right;
 }
 .direito p{
     margin: 0;
     font-size: 10px;
     width: 180px;
+    text-align: right;
 }
 .direito div{
     background-color: rgb(98, 41, 116);
     border-radius: 3px;
-    padding: 1px 15px;
+    padding: 1px 5px;
     color: rgb(234, 232, 235);
-    text-align: center;
+
 }
 .centro{
     align-content: end;
@@ -55,4 +62,33 @@ body{
     padding:0;
     border-bottom: 2.5px solid rgb(27, 27, 27);
     margin: 0;
+}
+.banners{
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    gap: 20px;
+    padding: 15px 0 ;
+}
+.banners img{
+    height: auto;
+    width: 320px;
+}
+.bannercentral{
+    display: flex;
+    position: relative
+}
+.fotoprincipal{
+    position: absolute;
+    bottom: -320px;
+    left: 580px;
+}
+.fotoprincipal img{
+    width: auto;
+    height: 650px;
+}
+.maospray{
+    position: absolute;
+    top: 5px;
+    right: 500px;
 }
