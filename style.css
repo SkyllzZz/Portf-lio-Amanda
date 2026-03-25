@@ -1,12 +1,12 @@
 *{
     box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
 body{
     background:linear-gradient(to right, rgb(109, 57, 177), rgb(98, 41, 116));
 }
 
 .topbar{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     color: rgb(48, 47, 47);
     padding:0px 20px;
     display: flex;
@@ -76,19 +76,46 @@ body{
 }
 .bannercentral{
     display: flex;
-    position: relative
+    position: relative;
+    padding-bottom: 230px;
+    z-index: 0;
+    
 }
 .fotoprincipal{
     position: absolute;
-    bottom: -320px;
+    bottom: 0px;
     left: 580px;
+    margin: auto;
 }
 .fotoprincipal img{
     width: auto;
     height: 650px;
 }
+.dadosprincipais{
+    position:absolute;
+    bottom: 160px;
+    right: 760px;
+    z-index: 1;
+}
+.dadosprincipais p{
+    margin: 0;
+    align-items: center;
+    font-size: large;
+    font-size: 30px;
+}
 .maospray{
     position: absolute;
-    top: 5px;
-    right: 500px;
+    bottom: 0px;
+    right: 520px;
+}
+.barrainferior{ 
+    background: rgb(234, 232, 235);
+    border-radius: 0px 0px 5px 5px;
+    max-width: 1000px;
+    display: flex;
+    margin: auto;
+    padding: 0px 20px;
+    z-index: 1;
+    position:relative;
+    top: -30px;
 }
